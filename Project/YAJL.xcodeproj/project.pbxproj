@@ -777,8 +777,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00C4049D0FE77562003CE908 /* Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_CURRENT_VERSION = "${YAJL_VERSION}";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Debug;
 		};
@@ -787,8 +789,10 @@
 			baseConfigurationReference = 00C4049E0FE77562003CE908 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_CURRENT_VERSION = "$(YAJL_VERSION)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Release;
 		};
